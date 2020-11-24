@@ -8,6 +8,7 @@ time.sleep(2)
 
 os.system('pip install keyboard')
 os.system('pip install pyautogui')
+os.system('pip install pillow')
 
 os.system('cls')
 print('Now Run That File, Okay ?')
