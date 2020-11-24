@@ -14,7 +14,7 @@ try:
 	if '78kfsid93859nfas' in words:
 		f.close()
 		w = open('How To Use.txt','w+')
-		w.write('1: Mouse Up == Up Arrow Key\n2: Mouse Down == Down Arrow Key\n3: 0 Key == Click The Mouse')
+		w.write('1: Mouse Up == Up Arrow Key\n2: Mouse Down == Down Arrow Key\n3: 0 Key == Click The Mouse\n4: - Key == Close Any Program Or If Needed Can Be Used To Shutdown Computer')
 		w.close()
 		# Root Starting..
 		root = Tk()
@@ -63,6 +63,9 @@ try:
 					os.system('taskkill /PID python.exe')
 					os.system('cls')
 					quit()
+				elif keyboard.is_pressed('-'):
+					pyautogui.hotkey('alt','f4')
+					
 
 		Label(textvariable = checking,font = "impact 20 italic",bg = "black",fg = "white").pack()
 		try:
