@@ -19,6 +19,8 @@ try:
 		# Root Starting..
 		root = Tk()
 		root.geometry('700x700')
+		root.minsize(700,700)
+		root.maxsize(700,700)
 		root.title('( Registered ) Automatic Mouse Controller')
 
 		# Setting Variables
